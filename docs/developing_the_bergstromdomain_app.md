@@ -12,15 +12,26 @@
 
 
 
-[Same level Part 1](topfile.md)
 
 [Same level Part 2](./topfile.md)
 
 
 
-[down one level Part 1](/section_1_getting_started/section1_file.md)
 
 [down one level Part 2](./section_1_getting_started/section1_file.md)
+
+
+
+
+### New TOC ###
+
+1. [Getting Started](./section_1_getting_started/section_1_getting_started_toc.md)
+    - [Setting Up Environment](./section_1_getting_started/1_1_setting_up_environment.md)
+    - [Creating First Application](./section_1_getting_started/1_2_creating_a_new_application.md)
+
+2. [Static Pages](./section_2_static_pages/section_2_static_pages_toc.md)
+    - [Creating Static Pages](./section_2_creating_static_pages/2_1_creating_static_pages.md)
+
 
 
 ----------
