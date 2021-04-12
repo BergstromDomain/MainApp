@@ -14,8 +14,13 @@
 
 [Same level Part 1](topfile.md)
 
-
 [Same level Part 2](./topfile.md)
+
+
+
+[down one level Part 1](/section_1_getting_started/section1_file.md)
+
+[down one level Part 2](./section_1_getting_started/section1_file.md)
 
 
 ----------
