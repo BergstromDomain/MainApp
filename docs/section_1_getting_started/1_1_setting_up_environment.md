@@ -132,3 +132,10 @@ I have had multiple failed attempts developing on Windows, using *VirtualBox*, u
   Shall the new role be a superuser? (y/n) y
   postgres@ip-172-31-1-233:/home/ubuntu/environment/MainApp$ exit
   ```
+
+
+----------
+[<< Previous Chapter](../developing_the_bergstromdomain_app.md) | 
+[Table Of Contents](../developing_the_bergstromdomain_app.md) | 
+[Section](../developing_the_bergstromdomain_app.md) | 
+[Next Chapter - Setting Up Environment >>](./section_1_getting_started/1_1_setting_up_environment.md)
