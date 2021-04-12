@@ -4,7 +4,7 @@
 ## Getting Started ##
 
 
-### Creating a Rails Application ###
+### Creating A New Rails Application ###
 
 
 

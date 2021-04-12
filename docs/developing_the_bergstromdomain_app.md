@@ -9,7 +9,7 @@
 ### Document Table of Contents ###
 1. [Getting Started](./section_1_getting_started/1_0_getting_started_toc.md)
     - [Setting Up Environment](./section_1_getting_started/1_1_setting_up_environment.md)
-    - [Creating First Application](./section_1_getting_started/1_2_creating_a_new_application.md)
+    - [Creating A New Rails Application](./section_1_getting_started/1_2_creating_a_new_rails_application.md)
 
 2. [Static Pages](./section_2_static_pages/2_0_static_pages_toc.md)
     - [Creating Static Pages](./section_2_static_pages/2_1_creating_static_pages.md)
