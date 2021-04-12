@@ -135,7 +135,7 @@ I have had multiple failed attempts developing on Windows, using *VirtualBox*, u
 
 
 ----------
-[<< Previous Chapter](../developing_the_bergstromdomain_app.md) | 
-[Table Of Contents](../developing_the_bergstromdomain_app.md) | 
-[Section](../developing_the_bergstromdomain_app.md) | 
-[Next Chapter - Setting Up Environment >>](./section_1_getting_started/1_1_setting_up_environment.md)
+[<< Previous Chapter](./section_1_getting_started/1_0_getting_started.md) | 
+[Document Table Of Contents](../developing_the_bergstromdomain_app.md) | 
+[Section Table Of Contents](./section_1_getting_started/1_0_getting_started.md) | 
+[Next Chapter >>](./section_1_getting_started/1_2_creating_a_new_application.md)

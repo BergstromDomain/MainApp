@@ -1,5 +1,9 @@
-# Developing the BergstromDomain Main Application  #
-> I was first introduced to *Ruby on Rails* in 2008 when I worked at Tilgin. We used it as our test framework. Since then, I have had a few attempts of developing my own apps but I've never really got to the point of deploying a working app. In this blog series I'm documenting the steps I've taken to create and deploy my first app.
+# Developing the BergstromDomain App #
+> I was first introduced to *Ruby on Rails* in 2008 when I worked at *Tilgin*.  I managed the development of a test automation framework based on Ruby on Rails combining Ruby-, Bash- and PHP-scripts and as well as test specifications and reports written in *LaTeX*.
+>
+> Since then, I have taken some online courses and I have had a few attempts of developing my own apps. None of them have been matured enough to be deployed. 
+>
+> In this blog series I'm documenting the steps I've taken to create and deploy my first app.
 
 
 ### Table of Contents ###
@@ -10,8 +14,5 @@
 2. [Static Pages](./section_2_static_pages/2_0_static_pages_toc.md)
     - [Creating Static Pages](./section_2_creating_static_pages/2_1_creating_static_pages.md)
 
-
-
 ----------
-[Next Chapter - Getting Started >>](./section_1_getting_started/1_0_getting_started_toc.md)
-
+[Next Chapter >>](./section_1_getting_started/1_0_getting_started_toc.md)

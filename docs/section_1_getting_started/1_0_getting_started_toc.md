@@ -2,7 +2,7 @@
 
 
 ## Getting Started ##
-> This section covers setting up the environment and creating the application.
+> This section covers setting up the Cloud9 environment, installing the relevant components and creating the database before creating a new application.
 
 
 ### Table of Contents ###
@@ -12,4 +12,6 @@
 
 
 ----------
-[<< Previous Chapter](../developing_the_bergstromdomain_app.md) | [Next Chapter - Setting Up Environment >>](./section_1_getting_started/1_1_setting_up_environment.md)
+[<< Previous Chapter](../developing_the_bergstromdomain_app.md) | 
+[Table Of Contents](../developing_the_bergstromdomain_app.md) | 
+[Next Chapter >>](./section_1_getting_started/1_1_setting_up_environment.md)
