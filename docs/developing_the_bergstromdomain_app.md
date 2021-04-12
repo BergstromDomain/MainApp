@@ -12,7 +12,7 @@
     - [Creating First Application](./section_1_getting_started/1_2_creating_a_new_application.md)
 
 2. [Static Pages](./section_2_static_pages/2_0_static_pages_toc.md)
-    - [Creating Static Pages](./section_2_creating_static_pages/2_1_creating_static_pages.md)
+    - [Creating Static Pages](./section_2_static_pages/2_1_creating_static_pages.md)
 
 ----------
 [Next Chapter >>](./section_1_getting_started/1_0_getting_started_toc.md)
