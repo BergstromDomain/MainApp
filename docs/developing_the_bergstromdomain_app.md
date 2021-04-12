@@ -3,7 +3,7 @@
 >
 > Since then, I have taken some online courses and I have had a few attempts of developing my own apps. None of them have been matured enough to be deployed. 
 >
-> In this blog series I'm documenting the steps I've taken to create and deploy my first app.
+> In this blog series I'm documenting the steps I'm taking to create and deploy my first app.
 
 
 ### Table of Contents ###
