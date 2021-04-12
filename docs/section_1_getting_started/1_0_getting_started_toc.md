@@ -6,8 +6,8 @@
 
 
 ### Section Getting Started - Table of Contents ###
-- [Setting Up Environment](../section_1_getting_started/1_1_setting_up_environment.md)
-- [Creating A New Rails Application](../section_1_getting_started/1_2_creating_a_new_rails_application.md)
+1. [Setting Up Environment](../section_1_getting_started/1_1_setting_up_environment.md)
+2. [Creating A New Rails Application](../section_1_getting_started/1_2_creating_a_new_rails_application.md)
 
 
 ----------

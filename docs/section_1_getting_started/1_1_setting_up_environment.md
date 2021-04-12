@@ -5,7 +5,7 @@
 
 
 ### Setting Up Environment ###
-I have had multiple failed attempts developing on Windows, using *VirtualBox*, using the *Windows Subsystem for Linux* as well as using dual boot and developing in *Ubuntu*. I've ended up spending more time getting the environments ready than working on my actual app. When I took a Ruby on Rails course from Udemy, I was introduced to __AWS Cloud9__ which is what I have decided to use going forward.
+> I have had several failed attempts developing on Windows, using *VirtualBox*, using the *Windows Subsystem for Linux* as well as using dual boot and developing in *Ubuntu*. I've ended up spending more time getting the environments ready than working on my actual app. When I took a Ruby on Rails course from Udemy, I was introduced to *AWS Cloud9* which is what I have decided to use going forward.
 
 
 #### Creating a Cloud9 Environment in AWS ####
@@ -14,12 +14,12 @@ I have had multiple failed attempts developing on Windows, using *VirtualBox*, u
   - __IAM user name__: *Developer*
   - __Password__: *****
   - Click on __Sign in__
-2. From __AWS Management Console__ select __Cloud9__
-3. Create a new environment
+  - From __AWS Management Console__ select __Cloud9__
+2. Create a new environment
   - Click on __Create environment__
-  - Enter the __Name__: *Ruby on Rails - BergstromDomain*
+  - Enter the __Name__: *Rails Development*
   - Click on __Next step__
-4. Configure settings
+3. Configure settings
   - Select __Environment type__: *Create a new EC2 instance for environment (direct access)*
   - Select __Instance type__: *t2.micro (1 GiB RAM + 1 vCPU)*
   - Select __Platform__: *Ubuntu Server 18.04 LTS*
@@ -27,6 +27,7 @@ I have had multiple failed attempts developing on Windows, using *VirtualBox*, u
   - Click on __Next step__
 5. Review
   - Click on __Create environment__
+
 
 #### Set up the Cloud9 Environment for Ruby on Rails Development  ####
 1. In Cloud9 open up a new terminal and install core packages for
@@ -38,7 +39,7 @@ I have had multiple failed attempts developing on Windows, using *VirtualBox*, u
   sudo apt-get update
   sudo apt-get install git-core zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev nodejs yarn
   ```
-2. Install Ruby using Rbenv_
+2. Install Ruby using Rbenv
   ```bash
   cd
   git clone https://github.com/rbenv/rbenv.git ~/.rbenv
@@ -80,10 +81,11 @@ I have had multiple failed attempts developing on Windows, using *VirtualBox*, u
   ls -l ~/.ssh/id_*.pub
   -rw-r--r-- 1 ubuntu ubuntu 745 Mar 18 10:32 /home/ubuntu/.ssh/id_rsa.pub
   ```
-- Show the keys and copy them
+- Show the keys and copy them to the clipboard
   ```bash
   less ~/.ssh/id_*.pub
   ```
+
 
 #### Setting Up GitHub As The Source Repository ####
 1. Log in to GitHub
@@ -137,7 +139,7 @@ I have had multiple failed attempts developing on Windows, using *VirtualBox*, u
 
 
 ----------
-[<< Previous Chapter](./section_1_getting_started/1_0_getting_started.md) | 
+[<< Previous Chapter](../section_1_getting_started/1_0_getting_started.md) | 
 [Document Table Of Contents](../developing_the_bergstromdomain_app.md) | 
-[Section Table Of Contents](./section_1_getting_started/1_0_getting_started.md) | 
-[Next Chapter >>](./section_1_getting_started/1_2_creating_a_new_application.md)
+[Section Table Of Contents](../section_1_getting_started/1_0_getting_started.md) | 
+[Next Chapter >>](../section_1_getting_started/1_2_creating_a_new_rails_application.md)
