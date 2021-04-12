@@ -1,17 +1,16 @@
 # Developing the BergstromDomain Main Application  #
 
 
-## Getting Started ##
-> This section covers setting up the environment and creating the application.
+## Static Pages ##
+> This section covers development of some static pages.
 
 
-### Table of Contents ###
-1. [Getting Started](./section_1_getting_started/section_1_getting_started_toc.md)
-  - [Setting Up Environment](./section_1_getting_started/1_1_setting_up_environment.md)
-  - [Creating First Application](./section_1_getting_started/1_2_creating_first_application.md)
+### Section Table of Contents ###
+2. [Static Pages](../section_2_static_pages/2_0_static_pages_toc.md)
+    - [Creating Static Pages](../section_2_static_pages/2_1_creating_static_pages.md)
 
 
-
-
-  [<< Previous Chapter](./2.01-010-010_introduction_to_aws.md) | [Document Table of Contents](../amazon_web_services_(aws)_certified_-_4_certifications.md) |
-    [Section Table of Contents](./section_1_aws_certified_cloud_practitioner.md) | [Next Chapter >>](./4.01-010-030_lab_session_-_intro_to_database_services.md)
+----------
+[<< Previous Chapter](./section_1_getting_started/1_2_creating_a_new_application.md) | 
+[Document Table Of Contents](../developing_the_bergstromdomain_app.md) | 
+[Next Chapter >>](../section_2_static_pages/2_1_creating_static_pages.md)

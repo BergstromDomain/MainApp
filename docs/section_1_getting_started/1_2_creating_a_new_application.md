@@ -1,4 +1,14 @@
-Creating the first application
+# Developing the BergstromDomain Main Application  #
+
+
+## Getting Started ##
+
+
+### Creating a Rails Application ###
+
+
+
+
 ----------
 [<< Previous Chapter](./section_1_getting_started/1_1_setting_up_environment.md) | 
 [Document Table Of Contents](../developing_the_bergstromdomain_app.md) | 

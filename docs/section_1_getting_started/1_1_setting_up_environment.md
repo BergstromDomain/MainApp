@@ -1,6 +1,8 @@
 # Developing the BergstromDomain Main Application  #
 
+
 ## Getting Started ##
+
 
 ### Setting Up Environment ###
 I have had multiple failed attempts developing on Windows, using *VirtualBox*, using the *Windows Subsystem for Linux* as well as using dual boot and developing in *Ubuntu*. I've ended up spending more time getting the environments ready than working on my actual app. When I took a Ruby on Rails course from Udemy, I was introduced to __AWS Cloud9__ which is what I have decided to use going forward.
