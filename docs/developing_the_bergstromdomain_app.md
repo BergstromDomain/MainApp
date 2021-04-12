@@ -6,6 +6,16 @@
   - [Setting Up Environment](./section_1_getting_started/1_1_setting_up_environment.md)
   - [Creating First Application](./section_1_getting_started/1_2_creating_first_application.md)
 2. [Building Static Pages](./section_2_building_static_pages/section_2_building_static_pages_toc.md)
+  - [Test](./test.md)
+
+
+
+
+
+[Same level Part 1](topfile.md)
+
+
+[Same level Part 2](./topfile.md)
 
 
 ----------
