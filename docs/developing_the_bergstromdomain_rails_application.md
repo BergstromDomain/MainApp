@@ -8,7 +8,8 @@
 
 ### Document Table of Contents ###
 1. [Getting Started](./section_1_getting_started/1_0_getting_started_toc.md)
+    1. [Setting Up Environment](./section_1_getting_started/1_1_setting_up_environment.md)
+    2. [Creating A New Rails Application](./section_1_getting_started/1_2_creating_a_new_rails_application.md)
 
 ----------
-<< Previous Chapter |
-[Next Chapter >>](./section_1_getting_started/1_0_getting_started_toc.md)
+<< Previous Chapter | [Next Chapter >>](./section_1_getting_started/1_0_getting_started_toc.md)
