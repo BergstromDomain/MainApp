@@ -11,5 +11,10 @@
     1. [Setting Up Environment](./section_1_getting_started/1_1_setting_up_environment.md)
     2. [Creating A New Rails Application](./section_1_getting_started/1_2_creating_a_new_rails_application.md)
 
+2. [Static Pages](./section_2_static_pages/2_0_static_pages_toc.md)
+    1. [Creating The About Page](./section_2_static_pages/2_1_creating_the_about_page.md)
+    2. [Creating The Contact Page](./section_2_static_pages/2_2_creating_the_contact_page.md)
+
+
 ----------
 << Previous Chapter | [Next Chapter >>](./section_1_getting_started/1_0_getting_started_toc.md)
