@@ -1,7 +1,7 @@
 # Developing the BergstromDomain Rails Application  #
 
 
-## Getting Started ##
+## Static Pages ##
 
 
 ### Creating The Contact Page ###
