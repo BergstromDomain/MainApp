@@ -13,3 +13,5 @@
         last_name: "Last Name #{person}"
         )
 end
+
+puts "10 persons created"

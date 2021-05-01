@@ -16,11 +16,11 @@
     2. [Creating The Contact Page](./section_2_static_pages/2_2_creating_the_contact_page.md)
 3. [Event Tracker - Person](./section_3_event_tracker_person/3_0_event_tracker_person_toc.md)
     1. [Creating A Person](../section_3_event_tracker_person/3_1_creating_a_person.md)
-    2. [Creating A Persons Seed File](../section_3_event_tracker_person/3_2_creating_a_persons_seed_file.md)
+    2. [Creating A Persons Seed File](../section_3_event_tracker_person/3_2_creating_people_seeds_file.md)
     3. [Listing Persons](../section_3_event_tracker_person/3_3_listing_persons.md)
     4. [Showing A Person](../section_3_event_tracker_person/3_4_showing_a_person.md)
     5. [Editing A Person](../section_3_event_tracker_person/3_5_editing_a_person.md)
-    6. [Deleting A Person](../section_3_event_tracker_person/3_6_editing_a_person.md)
+    6. [Deleting A Person](../section_3_event_tracker_person/3_6_deleting_a_person.md)
 
 
 ----------

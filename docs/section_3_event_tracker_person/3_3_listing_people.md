@@ -1,3 +1,6 @@
+
+
+
 <p id="notice"><%= notice %></p>
 
 <h1>Listing People</h1>
@@ -21,3 +24,5 @@
 <br>
 
 <%= link_to 'New Person', new_person_path %>
+
+
