@@ -11,5 +11,6 @@
 </p>
 
 <%= link_to 'Edit Person', edit_person_path(@person) %> |
+<%= link_to "Delete Person", person_path(@person), method: :delete, data: { confirm: "Are you sure you want to delete the person?" } %> |
 <%= link_to 'Back', people_path %> |
 <%= link_to "Home", root_path %>
