@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.feature "Event Tracker - Listing Persons - " do
+RSpec.feature "Event Tracker - Listing People - " do
     
     before do
         @person1 = Person.create(first_name: "James",
