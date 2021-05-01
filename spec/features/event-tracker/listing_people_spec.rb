@@ -9,7 +9,7 @@ RSpec.feature "Event Tracker - Listing People - " do
                                   last_name: "Ulrich") 
     end
     
-    scenario "A user lists all persons" do
+    scenario "A user lists all people" do
         visit "/"
         click_link "Event Tracker"
 
