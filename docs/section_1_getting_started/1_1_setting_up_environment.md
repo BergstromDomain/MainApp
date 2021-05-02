@@ -1,4 +1,4 @@
-# Developing the BergstromDomain Rails Application  #
+# How I developed my main Ruby on Rails application #
 
 
 ## Getting Started ##
@@ -8,7 +8,9 @@
 > I have had several failed attempts developing on Windows, using *VirtualBox*, using the *Windows Subsystem for Linux* as well as using dual boot and developing in *Ubuntu*. I've ended up spending more time getting the environments ready than working on my actual app. When I took a Ruby on Rails course from Udemy, I was introduced to *AWS Cloud9* which is what I have decided to use going forward.
 
 
-#### Creating a Cloud9 Environment in AWS ####
+#### Created a Cloud9 Environment in AWS ####
+The first thing I did was to create a Cloud9 environment in AWS. I've added some generic AWS notes in [Appendix E - AWS](../appendix/appendix_e_aws_tot.md).
+
 1. Log in to AWS as an __IAM__ user
   - __URL__: https://aws.amazon.com/console/
   - __IAM user name__: *Developer*

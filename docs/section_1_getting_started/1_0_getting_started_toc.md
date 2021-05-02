@@ -1,8 +1,8 @@
-# Developing the BergstromDomain Rails Application #
+# How I developed my main Ruby on Rails application #
 
 
 ## Getting Started ##
-> This section covers setting up the *Cloud9* environment, installing the relevant components and creating the database before creating a new application.
+> This section covers how I set up the *Cloud9* environment, installed the relevant components and creating the database before I created a new application.
 
 
 ### Section Getting Started - Table of Contents ###

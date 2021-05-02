@@ -1,4 +1,4 @@
-# Developing the BergstromDomain Rails Application #
+# How I developed my main Ruby on Rails application #
 
 
 ## Static Pages ##

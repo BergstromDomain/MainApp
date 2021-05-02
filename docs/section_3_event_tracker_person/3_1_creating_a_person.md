@@ -1,4 +1,4 @@
-# Developing the BergstromDomain Rails Application  #
+# How I developed my main Ruby on Rails application #
 
 
 ## Event Tracker - Person ##
@@ -8,19 +8,20 @@
 
 
 #### Creating git branches ####
-Create a new branch for the *Event-tracker* app. Within this branch create a that feature branch *create-person*. 
+I started off by creating a new branch for the *Event-tracker* app. Within this branch I created a that feature branch *create-person*. 
 ```bash
 git checkout -b event-tracker
 git checkout -b create-person
 ```
 
-#### Creating spec ####
-Create a new folder for the app and create a spec for the new feature.
+#### Creating the spec ####
+To keep my tests organised, I created a new folder for the app and I created a spec for the new feature.
 ```bash
 mkdir spec/features/event-tracker
 touch spec/features/event-tracker/creating_person_spec.rb
 ```
 
+I decided to keep the first version of the test very simple but I plan to add more validations later on.
 ```ruby
 require "rails_helper"
 
@@ -40,7 +41,7 @@ RSpec.feature "Event Tracker - Creating Person - " do
 end
 ```
 
-Run the new test in RSpec which will give an error
+When I ran the new test in RSpec it gave me an error
 ```bash
 rspec spec/features/event-tracker/creating_person_spec.rb
 
@@ -57,12 +58,12 @@ Failures:
 ```
 
 #### Generating the model ####
-Use scaffolding to generate the *Person* model
+The next thing I did was to generate the *Person* model using scaffolding
 ```bash
 rails g scaffold Person first_name:string last_name:string
 ```
 
-Review the *migration* file before running the migration
+I reviewed the *migration* file before running the migration to ensure everything was as expected which it was
 ```bash
 gedit db/migrate/20210407114922_create_people.rb
 rails db:migrate
@@ -73,12 +74,16 @@ rails db:migrate
 ```
 
 #### Add link from the home page ####
-Add the link from the *home* page
+To solve the first error, I added a link to the *event tracker* app from the *home* page
 ```bash
 gedit app/views/pages/home.html.erb
 ```
 
-Re-run the test in RSpec which will give a new error
+```ruby
+<%= link_to "Event Tracker", people_path %>
+```
+
+When I re-ran the test in RSpec it gave me the next error
 ```bash
 rspec spec/features/event-tracker/creating_person_spec.rb
 F
@@ -93,7 +98,7 @@ Failures:
 ```
 
 #### Add link from the event tracker page ####
-Add the link from the *Event Tracker* page
+To solve this error, I added a link to the *event tracker* app from the *people* index page
 ```bash
 gedit app/views/people/index.html.erb
 ```
@@ -102,7 +107,7 @@ gedit app/views/people/index.html.erb
 <%= link_to "Event Tracker", people_path %>
 ```
 
-Re-run the test in RSpec which will give a new error
+When I re-ran the test in RSpec it gave me the next error
 ```bash
 rspec spec/features/event-tracker/creating_person_spec.rb
 F
@@ -115,8 +120,8 @@ Failures:
 ```bash
 
 
-
 #### Add link from the show page ####
+To solve this error, I added a links from the *people* show page
 Add the link to the *Show* page
 ```bash
 gedit app/views/people/show.html.erb
@@ -127,14 +132,29 @@ gedit app/views/people/show.html.erb
 <%= link_to "Home", root_path %>
 ```
 
-Re-run the test in RSpec which will now pass
+When I re-ran the test in RSpec it passed
 ```bash
 rspec spec/features/event-tracker/creating_person_spec.rb
-.
+
 
 Finished in 0.42639 seconds (files took 0.89664 seconds to load)
 1 example, 0 failures
 ```
+
+#### Committing the changes ####
+I'm making sure to commit my changes frequently and to merge my changes back to the app branch and later on to the master branch.
+I've added some generic git notes in [Appendix C - Git](../appendix/appendix_c_git_tot.md).
+
+```bash
+git status
+git add -A 
+git commit -m "Implemented the create person functionality"
+git checkout event-tracker
+git merge create-person
+git push origin event-tracker
+git logline
+```
+
 
 ----------
 [<< Previous Chapter](../section_3_event_tracker_person/3_0_event_tracker_person_toc.md) | [Table Of Contents](../developing_the_bergstromdomain_rails_application.md) | [Next Chapter >>](../section_3_event_tracker_person/3_2_creating_people_seeds_file.md)

@@ -1,8 +1,8 @@
-# Developing the BergstromDomain Rails Application #
+# How I developed my main Ruby on Rails application #
 
 
 ## Event Tracker - Person ##
-> In this section I'll create some basic static pages. They will be updated with proper navbars and added content later on. This section is just to get up and running.
+> In this section I created the first model, the person, for which I developed some basic CRUD functionality. This model will evolve over time but one thing I've learned from previous attemps is __KISS - Keep it Simple, Stupid__.
 
 
 ### Event Tracker - Person - Table of Contents ###
