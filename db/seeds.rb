@@ -10,7 +10,10 @@
 12.times do |person|
     Person.create!(
         first_name: "First Name #{person+1}",
-        last_name: "Last Name #{person+1}"
+        last_name: "Last Name #{person+1}",
+        main_image: "http://placeimg.com/600/400/people",
+        thumb_image: "http://placeimg.com/350/200/people"
+
         )
 end
 

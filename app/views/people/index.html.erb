@@ -2,22 +2,18 @@
 
 <h1>Listing People</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @people.each do |person| %>
-      <tr>
-        <td><%= link_to "#{person.first_name} #{person.last_name}", person_path(person) %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<% @people.each do |person| %>
+  <p><%= link_to "#{person.first_name} #{person.last_name}", person_path(person) %></p>
+  <%= image_tag person.thumb_image %>
+<% end %>
 
 <br>
 
 <%= link_to 'New Person', new_person_path %>
+<%= link_to "Event Tracker", event_tracker_path %>
+<%= link_to "Home", root_path %>
+
+
+
+
+
