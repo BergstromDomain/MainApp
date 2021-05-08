@@ -10,6 +10,7 @@ RSpec.feature "Event Tracker - Showing A Person - " do
     scenario "A user shows a person" do
         visit "/"
         click_link "Event Tracker"
+        click_link "People"
         click_link "#{@person1.first_name} #{@person1.last_name}"
 
         expect(page).to have_content(@person1.first_name)

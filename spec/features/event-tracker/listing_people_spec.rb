@@ -12,6 +12,7 @@ RSpec.feature "Event Tracker - Listing People - " do
     scenario "A user lists all people" do
         visit "/"
         click_link "Event Tracker"
+        click_link "People"
 
         expect(page).to have_content(@person1.first_name)
         expect(page).to have_content(@person1.last_name)

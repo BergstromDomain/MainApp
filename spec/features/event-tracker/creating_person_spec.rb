@@ -4,6 +4,7 @@ RSpec.feature "Event Tracker - Creating A Person - " do
     scenario "A user creates a new person" do
         visit "/"
         click_link "Event Tracker"
+        click_link "People"
         click_link "New Person"
 
         fill_in "First name", with: "James"
@@ -18,6 +19,7 @@ RSpec.feature "Event Tracker - Creating A Person - " do
     scenario "A user fails to create a new person" do
         visit "/"
         click_link "Event Tracker"
+        click_link "People"
         click_link "New Person"
 
         fill_in "First name", with: ""

@@ -172,9 +172,9 @@ I've added some generic git notes in [Appendix C - Git](../appendix/appendix_c_g
 ```bash
 git status
 git add -A 
-git commit -m "Implemented the create person functionality"
+git commit -m "Event Tracker - People data validation"
 git checkout event-tracker
-git merge create-person
+git merge create-event
 git push origin event-tracker
 git logline
 ```

@@ -7,11 +7,29 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-10.times do |person|
+12.times do |person|
     Person.create!(
-        first_name: "First Name #{person}",
-        last_name: "Last Name #{person}"
+        first_name: "First Name #{person+1}",
+        last_name: "Last Name #{person+1}"
         )
 end
 
-puts "10 persons created"
+puts "12 persons created"
+
+12.times do |event|
+    Event.create!(
+        title: "Name #{event+1}'s Birthday",
+        details: "Name #{event+1} was born on #{event+1}-#{event+1}-#{event+2001}"
+        )
+end
+
+puts "12 birthday events created"
+
+6.times do |event|
+    Event.create!(
+        title: "Name #{event+1}'s Graduation",
+        details: "Name #{event+1} graduated on #{event+1}-#{event+1}-#{event+2001}"
+        )
+end
+
+puts "6 graduation events created"

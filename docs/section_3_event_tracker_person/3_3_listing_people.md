@@ -24,5 +24,8 @@
 <br>
 
 <%= link_to 'New Person', new_person_path %>
+<%= link_to "Event Tracker", event_tracker_path %>
+<%= link_to "Home", root_path %>
+
 
 

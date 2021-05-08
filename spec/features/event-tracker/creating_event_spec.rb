@@ -4,6 +4,7 @@ RSpec.feature "Event Tracker - Creating An Event - " do
     scenario "A user creates a new event" do
         visit "/"
         click_link "Event Tracker"
+        click_link "Events"
         click_link "New Event"
 
         fill_in "Title", with: "Niklas Bergstrom's Birthday"
@@ -18,6 +19,7 @@ RSpec.feature "Event Tracker - Creating An Event - " do
     scenario "A user fails to create a new event" do
         visit "/"
         click_link "Event Tracker"
+        click_link "Events"
         click_link "New Event"
 
         fill_in "Title", with: ""

@@ -9,6 +9,7 @@ RSpec.feature "Event Tracker - Editing A Person - " do
     scenario "A user updates a person" do
         visit "/"
         click_link "Event Tracker"
+        click_link "People"
         click_link "#{@person1.first_name} #{@person1.last_name}"
         click_link "Edit Person"
 
@@ -22,6 +23,7 @@ RSpec.feature "Event Tracker - Editing A Person - " do
     scenario "A user failed to update a person" do
         visit "/"
         click_link "Event Tracker"
+        click_link "People"
         click_link "#{@person1.first_name} #{@person1.last_name}"
         click_link "Edit Person"
 

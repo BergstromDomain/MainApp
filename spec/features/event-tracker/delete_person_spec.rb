@@ -9,6 +9,7 @@ RSpec.feature "Event Tracker - Deleting Person - " do
     scenario "A user deletes a person" do
         visit "/"
         click_link "Event Tracker"
+        click_link "People"
         click_link "#{@person1.first_name} #{@person1.last_name}"
         click_link "Delete Person"
 
