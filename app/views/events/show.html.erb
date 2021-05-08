@@ -10,5 +10,7 @@
   <%= @event.details %>
 </p>
 
-<%= link_to 'Edit', edit_event_path(@event) %> |
-<%= link_to 'Back', events_path %>
+<%= link_to 'Edit Event', edit_event_path(@event) %> |
+<%= link_to "Delete Event", event_path(@event), method: :delete, data: { confirm: "Are you sure you want to delete the person?" } %> |
+<%= link_to 'Back', events_path %> |
+<%= link_to "Home", root_path %>
