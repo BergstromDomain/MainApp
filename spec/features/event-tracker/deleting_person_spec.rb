@@ -1,6 +1,7 @@
 require "rails_helper"
 
 RSpec.feature "Event Tracker - Deleting Person - " do
+    
     before do
         @person1 = Person.create(first_name: "James",
                                   last_name: "Hetfield") 
