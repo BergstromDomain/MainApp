@@ -2,21 +2,11 @@
 
 <h1>Listing Events</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-    </tr>
-  </thead>
+<% @events.each do |event| %>
+  <p><%= link_to event.title, event_path(event) %></p>
+  <%= image_tag event.thumb_image %>
+<% end %>
 
-  <tbody>
-    <% @events.each do |event| %>
-      <tr>
-        <td><%= link_to event.title, event_path(event) %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
 
 <br>
 

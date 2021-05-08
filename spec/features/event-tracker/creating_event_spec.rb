@@ -12,7 +12,6 @@ RSpec.feature "Event Tracker - Creating An Event - " do
         click_button "Create Event"
 
         expect(page).to have_content("Event was successfully created")
-
         expect(current_path).to eq(event_path(Event.last.id)) 
    end
 

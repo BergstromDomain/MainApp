@@ -10,6 +10,10 @@
   <%= @event.details %>
 </p>
 
+<%= image_tag @event.main_image %>
+
+<br>
+
 <%= link_to 'Edit Event', edit_event_path(@event) %> |
 <%= link_to "Delete Event", event_path(@event), method: :delete, data: { confirm: "Are you sure you want to delete the person?" } %> |
 <%= link_to 'Back', events_path %> |

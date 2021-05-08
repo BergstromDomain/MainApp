@@ -19,7 +19,9 @@ puts "12 persons created"
 12.times do |event|
     Event.create!(
         title: "Name #{event+1}'s Birthday",
-        details: "Name #{event+1} was born on #{event+1}-#{event+1}-#{event+2001}"
+        details: "Name #{event+1} was born on #{event+1}-#{event+1}-#{event+2001}",
+        main_image: "http://placeimg.com/600/400/nature",
+        thumb_image: "http://placeimg.com/350/200/nature"
         )
 end
 
@@ -28,8 +30,11 @@ puts "12 birthday events created"
 6.times do |event|
     Event.create!(
         title: "Name #{event+1}'s Graduation",
-        details: "Name #{event+1} graduated on #{event+1}-#{event+1}-#{event+2001}"
+        details: "Name #{event+1} graduated on #{event+1}-#{event+1}-#{event+2001}",
+        main_image: "http://placeimg.com/600/400/animals",
+        thumb_image: "http://placeimg.com/350/200/animals"
         )
 end
 
 puts "6 graduation events created"
+
