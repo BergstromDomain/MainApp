@@ -1,6 +1,6 @@
 # Images #
 
 
-![rails](yay_you_are_on_rails.JPG)
+![Yay! You're on Rails!](../images/yay_you_are_on_rails.JPG)
 
 
