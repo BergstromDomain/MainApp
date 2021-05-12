@@ -1,6 +1,6 @@
 # Images #
 
 
-![log line](../images/git_logline.jpg?raw=true)
+![rails](yay_you_are_on_rails.JPG)
 
 
