@@ -1,38 +1,40 @@
-# How I developed my main Ruby on Rails application #
+# How I developed this Ruby on Rails application #
 
 
 ## Getting Started ##
 
 
-### Setting Up Environment ###
+### Set Up Development Environment ###
 > I have had several failed attempts developing on Windows, using *VirtualBox*, using the *Windows Subsystem for Linux* as well as using dual boot and developing in *Ubuntu*. I've ended up spending more time getting the environments ready than working on my actual app. When I took a Ruby on Rails course from Udemy, I was introduced to *AWS Cloud9* which is what I have decided to use going forward.
+>
+> In this guide I have documented the steps I have taken, additional information I have learnt along the way are documented in the appendix which I intend to use as my own reference guides.
 
 
-#### Created a Cloud9 Environment in AWS ####
-The first thing I did was to create a Cloud9 environment in AWS. I've added some generic AWS notes in [Appendix E - AWS](../appendix/appendix_e_aws_tot.md).
+#### How I created a Cloud9 environment in AWS ####
+The first thing I did was to create a Cloud9 environment in AWS. I've added some generic AWS notes in [Appendix D - AWS](../appendix_d_aws/appendix_d_0_aws_tot.md).
 
-1. Log in to AWS as an __IAM__ user
+1. Logged in to AWS as an IAM user
   - __URL__: https://aws.amazon.com/console/
   - __IAM user name__: *Developer*
   - __Password__: *****
-  - Click on __Sign in__
-  - From __AWS Management Console__ select __Cloud9__
-2. Create a new environment
-  - Click on __Create environment__
-  - Enter the __Name__: *Rails Development*
-  - Click on __Next step__
-3. Configure settings
-  - Select __Environment type__: *Create a new EC2 instance for environment (direct access)*
-  - Select __Instance type__: *t2.micro (1 GiB RAM + 1 vCPU)*
-  - Select __Platform__: *Ubuntu Server 18.04 LTS*
-  - Select __Cost-saving setting__: *After 30 minutes (default)*
-  - Click on __Next step__
-5. Review
-  - Click on __Create environment__
+  - Clicked on __Sign in__
+  - From the AWS Management Console I selected __Cloud9__
+2. Created a new environment
+  - Clicked on __Create environment__
+  - Entered the __Name__: *Rails Development*
+  - Clicked on __Next step__
+3. Configured settings
+  - Selected __Environment type__: *Create a new EC2 instance for environment (direct access)*
+  - Selected __Instance type__: *t2.micro (1 GiB RAM + 1 vCPU)*
+  - Selected __Platform__: *Ubuntu Server 18.04 LTS*
+  - Selected __Cost-saving setting__: *After 30 minutes (default)*
+  - Clicked on __Next step__
+5. Reviewed
+  - Clicked on __Create environment__
 
 
-#### Set up the Cloud9 Environment for Ruby on Rails Development  ####
-1. In Cloud9 open up a new terminal and install core packages for
+#### How I set up the Cloud9 environment for ruby on rails development  ####
+1. In Cloud9 I opened up a new terminal and installed core packages
   ```bash
   sudo apt install curl
   curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
@@ -41,7 +43,7 @@ The first thing I did was to create a Cloud9 environment in AWS. I've added some
   sudo apt-get update
   sudo apt-get install git-core zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev nodejs yarn
   ```
-2. Install Ruby using Rbenv
+2. Installed Ruby using Rbenv
   ```bash
   cd
   git clone https://github.com/rbenv/rbenv.git ~/.rbenv
@@ -58,60 +60,60 @@ The first thing I did was to create a Cloud9 environment in AWS. I've added some
   ruby -v
   ruby 3.0.0p0 (2020-12-25 revision 95aff21468) [x86_64-linux]
   ```
-3. Install Bundler
+3. Installed Bundler
   ```bash
   gem install bundler
   ```
-4. Configure Git
+4. Configured Git
   ```bash
   git config --global color.ui true
   git config --global user.name "Niklas Bergstrom"
   git config --global user.email "me.niklas@gmail.com"
   ```
-5. Generate SSH keys
-- Check to see if you have any SSH keys
+5. Generated SSH keys
+- Checked to see if I had any SSH keys
   ```bash
   ls -l ~/.ssh/id_*.pub
   ls: cannot access '/home/ubuntu/.ssh/id_*.pub': No such file or directory
   ```
-- Generate SSH keys
+- Generated SSH keys
   ```bash
   ssh-keygen -t rsa -b 4096 -C me.niklas@gmail.com
   ```
-- Check to see that your keys have been generated
+- Checked to see that my keys have been generated
   ```bash
   ls -l ~/.ssh/id_*.pub
   -rw-r--r-- 1 ubuntu ubuntu 745 Mar 18 10:32 /home/ubuntu/.ssh/id_rsa.pub
   ```
-- Show the keys and copy them to the clipboard
+- Showed the keys and copied them to the clipboard
   ```bash
   less ~/.ssh/id_*.pub
   ```
 
 
-#### Setting Up GitHub As The Source Repository ####
-1. Log in to GitHub
+#### How I set up GitHub as the source repository ####
+1. Logged in to GitHub
   - __URL__: https://github.com/
   - __User name__: *me.niklas@gmail.com*
   - __Password__: *****
-2. Create a new repository
-  - Click on __New__
-  - Enter __Repository name__: *MainApp*
-  - Select *Public*
-  - Click on __Create repository__
-3. Add public key from __Cloud9__
-  - Copy keys from __Cloud9__
+2. Created a new repository
+  - Clicked on __New__
+  - Entered __Repository name__: *MainApp*
+  - Selected *Public*
+  - Clicked on __Create repository__
+3. Added public key from __Cloud9__
+  - Copied keys from __Cloud9__
     ```bash
     less ~/.ssh/id_*.pub
     ```
-4. Open the new repository and select __Settings >> Deploy keys__
-  - Click on __Add deploy key__
-  - Enter __Title__: *Cloud9 IDE*
-  - Copy the key into the __Key__ field
-  - Check the __Allow write access__ checkbox
-  - Click on __Add key__
-5. Test the connection
-  - In __Cloud9__ type the command
+4. Opened the new repository and selected __Settings >> Deploy keys__
+  - Clicked on __Add deploy key__
+  - Entered __Title__: *Cloud9 IDE*
+  - Copied the key into the __Key__ field
+  - Checked the __Allow write access__ checkbox
+  - Clicked on __Add key__
+5. Tested the connection
+  - In __Cloud9__ typed the command
     ```bash
     ssh -T git@github.com
     The authenticity of host 'github.com (140.82.114.3)' can't be established.
@@ -121,15 +123,15 @@ The first thing I did was to create a Cloud9 environment in AWS. I've added some
     Hi BergstromDomain/MainApp! You've successfully authenticated, but GitHub does not provide shell access.
     ```
 
-#### Install and Configure Ruby on Rails ####
-1. Install Rails
+#### Installed and configured ruby on rails ####
+1. Installed Rails
   ```bash
   gem install rails -v 6.1.1
   rbenv rehash
   rails -v
   Rails 6.1.1
   ```
-2. Setting up PostgreSQL
+2. Set up PostgreSQL
   ```bash
   sudo apt install postgresql libpq-dev
   sudo su postgres
@@ -141,4 +143,4 @@ The first thing I did was to create a Cloud9 environment in AWS. I've added some
 
 
 ----------
-[<< Previous Chapter](../section_1_getting_started/1_0_getting_started.md) | [Table Of Contents](../developing_the_bergstromdomain_rails_application.md) | [Next Chapter >>](../section_1_getting_started/1_2_creating_a_new_rails_application.md)
+[<< Previous Chapter](../section_1_getting_started/1_0_getting_started.md) | [Table Of Contents](../how_i_developed_this_rails_application.md) | [Next Chapter >>](../section_1_getting_started/1_2_creating_a_new_rails_application.md)

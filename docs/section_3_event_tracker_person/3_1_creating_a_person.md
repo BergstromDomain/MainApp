@@ -8,24 +8,24 @@
 
 
 #### Creating git branches ####
-I started off by creating a new branch for the *Event-tracker* app. Within this branch I created a that feature branch *create-person*. 
+I started off by creating a new branch for the *Event-tracker* app. Within this branch I created a feature branch *create-person*. 
 ```bash
 git checkout -b event-tracker
 git checkout -b create-person
 ```
 
-#### Creating the spec ####
+#### Created the spec ####
 To keep my tests organised, I created a new folder for the app and I created a spec for the new feature.
 ```bash
 mkdir spec/features/event-tracker
-touch spec/features/event-tracker/creating_person_spec.rb
+gedit spec/features/event-tracker/creating_person_spec.rb
 ```
 
 I decided to keep the first version of the test very simple but I plan to add more validations later on.
 ```ruby
 require "rails_helper"
 
-RSpec.feature "Event Tracker - Creating Person - " do
+RSpec.feature "Event Tracker - Creating A Person - " do
     scenario "A user creates a new person" do
         visit "/"
         click_link "Event Tracker"
@@ -41,10 +41,8 @@ RSpec.feature "Event Tracker - Creating Person - " do
 end
 ```
 
-When I ran the new test in RSpec it gave me an error
+When I ran the new test in RSpec it gave me an error.
 ```bash
-rspec spec/features/event-tracker/creating_person_spec.rb
-
 rspec spec/features/event-tracker/creating_person_spec.rb
 F
 
@@ -57,13 +55,13 @@ Failures:
        Unable to find link "Event Tracker"
 ```
 
-#### Generating the model ####
-The next thing I did was to generate the *Person* model using scaffolding
+#### Generated the model ####
+The next thing I did was to generate the *Person* model using scaffolding.
 ```bash
 rails g scaffold Person first_name:string last_name:string
 ```
 
-I reviewed the *migration* file before running the migration to ensure everything was as expected which it was
+I reviewed the migration file before running the migration to ensure everything was as expected.
 ```bash
 gedit db/migrate/20210407114922_create_people.rb
 rails db:migrate
@@ -73,8 +71,8 @@ rails db:migrate
 == 20210407114922 CreatePeople: migrated (0.0674s) ============================
 ```
 
-#### Add link from the home page ####
-To solve the first error, I added a link to the *event tracker* app from the *home* page
+#### Added link from the home page ####
+To solve the first error, I added a link to the *event tracker* app from the *home* page.
 ```bash
 gedit app/views/pages/home.html.erb
 ```
@@ -83,7 +81,7 @@ gedit app/views/pages/home.html.erb
 <%= link_to "Event Tracker", people_path %>
 ```
 
-When I re-ran the test in RSpec it gave me the next error
+When I re-ran the test in RSpec it gave me the next error.
 ```bash
 rspec spec/features/event-tracker/creating_person_spec.rb
 F
@@ -97,7 +95,7 @@ Failures:
        Unable to find link "Create new person"
 ```
 
-#### Add link from the event tracker page ####
+#### Added link from the event tracker page ####
 To solve this error, I added a link to the *event tracker* app from the *people* index page
 ```bash
 gedit app/views/people/index.html.erb
@@ -157,4 +155,4 @@ git logline
 
 
 ----------
-[<< Previous Chapter](../section_3_event_tracker_person/3_0_event_tracker_person_toc.md) | [Table Of Contents](../developing_the_bergstromdomain_rails_application.md) | [Next Chapter >>](../section_3_event_tracker_person/3_2_creating_people_seeds_file.md)
+[<< Previous Chapter](../section_3_event_tracker_person/3_0_event_tracker_person_toc.md) | [Table Of Contents](../how_i_developed_this_rails_application.md) | [Next Chapter >>](../section_3_event_tracker_person/3_2_creating_people_seeds_file.md)

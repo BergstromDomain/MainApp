@@ -19,4 +19,4 @@ rails g controller Pages home about contact
 
 
 ----------
-[<< Previous Chapter](../developing_the_bergstromdomain_rails_application.md) | [Table Of Contents](../developing_the_bergstromdomain_rails_application.md) | [Next Chapter >>](../section_1_getting_started/1_1_setting_up_environment.md)
+[<< Previous Chapter](../developing_the_bergstromdomain_rails_application.md) | [Table Of Contents](../how_i_developed_this_rails_application.md) | [Next Chapter >>](../section_1_getting_started/1_1_setting_up_environment.md)

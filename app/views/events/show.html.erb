@@ -12,6 +12,23 @@
 
 <%= image_tag @event.main_image %>
 
+
+<p>
+  <strong>Day:</strong>
+  <%= @event.day %>
+</p>
+
+<p>
+  <strong>Month:</strong>
+  <%= @event.month %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @event.year %>
+</p>
+
+
 <br>
 
 <%= link_to 'Edit Event', edit_event_path(@event) %> |

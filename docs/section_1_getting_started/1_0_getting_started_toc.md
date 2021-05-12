@@ -1,4 +1,4 @@
-# How I developed my main Ruby on Rails application #
+# How I developed this Ruby on Rails application #
 
 
 ## Getting Started ##
@@ -6,9 +6,9 @@
 
 
 ### Section Getting Started - Table of Contents ###
-1. [Setting Up Environment](../section_1_getting_started/1_1_setting_up_environment.md)
-2. [Creating A New Rails Application](../section_1_getting_started/1_2_creating_a_new_rails_application.md)
+1. [Set Up Development Environment](../section_1_getting_started/1_1_set_up_development_environment.md)
+2. [Created A New Rails Application](../section_1_getting_started/1_2_created_a_new_rails_application.md)
 
 
 ----------
-[<< Previous Chapter](../developing_the_bergstromdomain_rails_application.md) | [Table Of Contents](../developing_the_bergstromdomain_rails_application.md) | [Next Chapter >>](../section_1_getting_started/1_1_setting_up_environment.md)
+[<< Previous Chapter](../how_i_developed_this_rails_application.md) | [Table Of Contents](../how_i_developed_this_rails_application.md) | [Next Chapter >>](../section_1_getting_started/1_1_set_up_development_environment.md)

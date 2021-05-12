@@ -9,6 +9,9 @@ RSpec.feature "Event Tracker - Creating An Event - " do
 
         fill_in "Title", with: "Niklas Bergstrom's Birthday"
         fill_in "Details", with: "Niklas was born in Stockholm on 17 February 1974"
+        fill_in "Day", with: "17"
+        fill_in "Month", with: "2"
+        fill_in "Year", with: "1974"
         click_button "Create Event"
 
         expect(page).to have_content("Event was successfully created")
@@ -23,6 +26,9 @@ RSpec.feature "Event Tracker - Creating An Event - " do
 
         fill_in "Title", with: ""
         fill_in "Details", with: ""
+        fill_in "Day", with: ""
+        fill_in "Month", with: ""
+        fill_in "Year", with: ""
         click_button "Create Event"
 
         expect(page).to have_content("1 error prohibited this event from being saved:")

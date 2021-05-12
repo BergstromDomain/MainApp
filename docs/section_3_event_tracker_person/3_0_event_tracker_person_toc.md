@@ -15,4 +15,4 @@
 
 
 ----------
-[<< Previous Chapter](../section_2_static_pages/2_2_creating_the_contact_page.md) | [Table Of Contents](../developing_the_bergstromdomain_rails_application.md) | [Next Chapter >>](../section_3_event_tracker_person/3_1_creating_a_person.md)
+[<< Previous Chapter](../section_2_static_pages/2_2_created_the_contact_page.md) | [Table Of Contents](../how_i_developed_this_rails_application.md) | [Next Chapter >>](../section_3_event_tracker_person/3_1_creating_a_person.md)

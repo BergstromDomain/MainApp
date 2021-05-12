@@ -4,6 +4,7 @@
 
 <% @events.each do |event| %>
   <p><%= link_to event.title, event_path(event) %></p>
+  <p><%="#{event.day}-#{event.month}-#{event.year}" %></p>
   <%= image_tag event.thumb_image %>
 <% end %>
 
